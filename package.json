@@ -1,0 +1,23 @@
+{
+  "name": "goe_gravur_designer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "file-loader": "^6.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "laravel-mix": "^6.0.49",
+    "rimraf": "^5.0.5",
+    "svgo-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "ttf2woff2": "^5.0.0",
+    "uglify-js": "^3.17.4"
+  }
+}
