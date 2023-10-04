@@ -1,0 +1,17 @@
+<IfModule mod_headers.c>
+  Header unset ETag
+  Header set Cache-Control "max-age=31536000, public"
+
+  <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+
+  <FilesMatch "\.(js|css|html|htm|xml)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault "access plus 31536000 seconds"
+</IfModule>
